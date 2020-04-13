@@ -8,6 +8,11 @@ const store = () => new Vuex.Store({
   state: {
     drawer: false
   },
+  mutations: {
+    closeDrawer(state) {
+      state.drawer = false
+    },
+  }
 });
 
 export default store

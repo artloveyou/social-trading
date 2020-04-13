@@ -6,31 +6,21 @@
     light
   >
 
-    <logo-full/>
+    <logo/>
 
-    <v-tabs
-      right
-      >
-      <v-tab
-        :id="`item-${item.title}`"
-        v-for="(item, i) in items"
-        :key="i"
-        :to="item.to"
-        router>{{ item.title }}
-      </v-tab>
-    </v-tabs>
+    <v-spacer/>
 
-    <div class="text-center ma-2">
-      <v-btn rounded color="primary" dark>Open account</v-btn>
-    </div>
+    <appTabs/>
 
-    <div class="text-center">
-      <v-btn rounded outlined color="primary" dark>Sign in</v-btn>
-    </div>
+    <signUp class="signUp"/>
+    <signIn class="signIn"/>
 
-    <languagesSelector />
+    <languageSelector class="languageSelector"/>
 
-    <v-app-bar-nav-icon @click.stop="$store.state.drawer = !$store.state.drawer"/>
+    <v-app-bar-nav-icon
+      class="mobile-tabs-icon"
+      @click.stop="$store.state.drawer = !$store.state.drawer"
+    />
 
 
   </v-app-bar>
@@ -38,47 +28,33 @@
 </template>
 
 <script>
-  import logoFull from '~/components/logo/logoFull'
-  import LanguagesSelector from '~/components/layouts/LanguagesSelector.vue'
+  import logo from '~/components/logo/logo'
+  import languageSelector from '~/components/layouts/languageSelector'
+  import appTabs from '~/layouts/default/appTabs'
+  import signUp from '~/layouts/default/signUp'
+  import signIn from '~/layouts/default/signIn'
 
   export default {
     components: {
-      logoFull,
-      LanguagesSelector
+      logo,
+      languageSelector,
+      appTabs, signUp, signIn
     },
     data() {
-      return {
-        items: [
-          {
-            title: 'About us',
-            to: '/about-us'
-          },
-          {
-            title: 'For Traders',
-            to: '/for-traders'
-          },
-          {
-            title: 'Social Trading',
-            to: '/social-trading'
-          },
-          {
-            title: 'Promotions',
-            to: '/promotions'
-          },
-          {
-            title: 'Partnership',
-            to: '/partnership'
-          },
-          {
-            title: 'Blog',
-            to: '/blog'
-          }
-        ],
-      }
+      return {}
     }
   }
 </script>
 
 <style scoped>
-
+  @media (max-width: 600px) {
+    .signUp, .signIn, .languageSelector {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .mobile-tabs-icon {
+      display: none;
+    }
+  }
 </style>

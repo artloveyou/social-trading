@@ -4,7 +4,7 @@
       <component :is="name"/>
     </div>
 
-    <div v-if="selector === true" class="lang-text selector">
+    <div v-if="selector === true" class="lang-text select selector">
       {{code}}
     </div>
     <div v-else class="lang-text">
@@ -61,12 +61,14 @@
   }
 
   .lang-text {
-    text-transform: uppercase;
     text-align: left;
     font-size: 0.9em;
     font-weight: 400;
-    /*color: #8e9aac;*/
-    width: 30px;
+    width: 25px;
+  }
+
+  .select {
+    text-transform: uppercase;
   }
 
   .lang-text:hover {

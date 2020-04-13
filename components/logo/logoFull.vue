@@ -1,5 +1,4 @@
 <template>
-  <div class="logo">
     <svg width="168" height="50" viewBox="0 0 168 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
       <g id="Canvas" fill="none">
@@ -119,11 +118,4 @@
         </g>
       </g>
     </svg>
-  </div>
 </template>
-
-<style>
-.logo svg{
-  height: 45px;
-}
-</style>

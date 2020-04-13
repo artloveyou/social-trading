@@ -7,7 +7,7 @@
           class="lang-selector"
           v-on="on"
         >
-          <Language :selector="true" :code="activeCode" :name="activeName"/>
+          <language :selector="true" :code="activeCode" :name="activeName"/>
         </div>
       </template>
 
@@ -18,7 +18,7 @@
              v-on:click="setLang(lang.code, lang.name)"
         >
           <div class="lang-list-item" v-if="activeCode != lang.code">
-            <Language :code="lang.code" :name="lang.name"/>
+            <language :code="lang.code" :name="lang.name"/>
           </div>
         </div>
       </div>
@@ -29,11 +29,11 @@
 
 <script>
   import languages from '~/assets/lang/languages';
-  import Language from '~/components/layouts/Language'
+  import language from '~/components/layouts/language'
 
   export default {
     components: {
-      languages, Language
+      languages, language
     },
     data: () => ({
       selector: false,
@@ -51,11 +51,6 @@
 </script>
 
 <style scoped>
-  @media (max-width: 770px) {
-    .selector {
-      display: none;
-    }
-  }
   .lang-selector {
     display: flex;
     align-items: center;
