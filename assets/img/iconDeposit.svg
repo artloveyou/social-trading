@@ -15,7 +15,7 @@
    version="1.1"
    id="svg861"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="iconTwo.svg">
+   sodipodi:docname="iconDeposit.svg">
   <defs
      id="defs855" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-123.49135"
+     inkscape:cx="-587.77706"
      inkscape:cy="-73.966727"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -37,8 +37,8 @@
      fit-margin-bottom="0"
      inkscape:window-width="1111"
      inkscape:window-height="631"
-     inkscape:window-x="284"
-     inkscape:window-y="592"
+     inkscape:window-x="306"
+     inkscape:window-y="198"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata858">
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      id="layer1"
      transform="translate(-15.664824,-120.85616)">
     <path
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#9bafe2;stroke-width:0.8;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 19.868204,121.2562 c 2.10055,0 3.80339,1.70283 3.80339,3.80339 0,2.10055 -1.70284,3.80338 -3.80339,3.80338 -2.10055,0 -3.80338,-1.70283 -3.80338,-3.80338 0,-0.4625 0.0825,-0.90571 0.23372,-1.31571"
        id="path828"
        inkscape:connector-curvature="0"

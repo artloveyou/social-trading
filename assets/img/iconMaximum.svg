@@ -15,7 +15,7 @@
    version="1.1"
    id="svg861"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="iconOne.svg">
+   sodipodi:docname="iconMaximum.svg">
   <defs
      id="defs855" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-299.37816"
+     inkscape:cx="-763.66387"
      inkscape:cy="-144.13932"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      id="layer1"
      transform="translate(-62.201542,-102.30353)">
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#f8e49e;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 62.607239,102.70357 c 2.445773,0 2.005549,7.56866 4.599514,7.59285 2.546473,0.0237 2.445774,-7.59285 4.745532,-7.59285"
        id="path826"
        inkscape:connector-curvature="0"

@@ -15,7 +15,7 @@
    version="1.1"
    id="svg861"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="iconThree.svg">
+   sodipodi:docname="iconClock.svg">
   <defs
      id="defs855" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-204.72581"
+     inkscape:cx="-294.72581"
      inkscape:cy="10.513087"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -35,10 +35,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1111"
-     inkscape:window-height="631"
-     inkscape:window-x="284"
-     inkscape:window-y="592"
+     inkscape:window-width="768"
+     inkscape:window-height="561"
+     inkscape:window-x="467"
+     inkscape:window-y="240"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata858">
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,13 +58,13 @@
      id="layer1"
      transform="translate(-37.158109,-143.19672)">
     <circle
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#a4eed0;stroke-width:0.80000001;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path831"
        cx="41.367207"
        cy="147.40582"
        r="3.8090978" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#a4eed0;stroke-width:0.80000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 41.295221,144.91592 v 2.58918 l 1.5368,1.48668"
        id="path833"
        inkscape:connector-curvature="0" />
