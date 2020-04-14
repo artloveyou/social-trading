@@ -1,5 +1,5 @@
 <template>
-      <div class="text-center ma-2">
+      <div class="text-center ma-4">
         <v-btn
           class="custom-transform-class text-none"
           width="100%"

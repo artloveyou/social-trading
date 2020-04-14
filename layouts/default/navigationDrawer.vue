@@ -11,14 +11,15 @@
     <signUpMobile class="signUpMobile"/>
     <signInMobile class="signInMobile"/>
 
-    <v-list dense>
-      <v-list-item link>
-        <v-list-item-action>
-          <v-icon>mdi-contact-mail</v-icon>
-        </v-list-item-action>
-
+    <v-list>
+      <v-list-item
+        :id="`item-${item.title}`"
+        v-for="(item, i) in items.pages"
+        :key="i"
+        :to="item.to"
+        router>
         <v-list-item-content>
-          <v-list-item-title>Contact</v-list-item-title>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -31,17 +32,21 @@
   import navigationDrawerTop from '~/layouts/default/navigationDrawerTop'
   import signUpMobile from '~/layouts/default/signUpMobile'
   import signInMobile from '~/layouts/default/signInMobile'
+  import pages from '~/pages/pages'
 
   export default {
     components: {
       logo,
       languageSelector,
       navigationDrawerTop,
-      signUpMobile, signInMobile
+      signUpMobile, signInMobile,
+      pages
     },
     data() {
-      return {}
-    }
+      return {
+        items: pages
+      }
+    },
   }
 </script>
 

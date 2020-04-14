@@ -30,12 +30,12 @@
 </script>
 
 <style scoped>
-  @media (max-width: 1200px) {
+  @media (max-width: 1270px) {
     .full-tabs {
       display: none;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1270px) {
     .mobile-tabs {
       display: none;
     }

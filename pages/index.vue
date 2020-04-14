@@ -1,7 +1,13 @@
 <template>
   <v-layout>
-    <v-flex class="text-center">
       Index
-    </v-flex>
   </v-layout>
 </template>
+
+<script>
+  export default {
+    created: function() {
+      this.$router.replace({ path: '/social-trading' })
+    }
+  }
+</script>

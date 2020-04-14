@@ -52,7 +52,7 @@
       display: none;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1270px) {
     .mobile-tabs-icon {
       display: none;
     }

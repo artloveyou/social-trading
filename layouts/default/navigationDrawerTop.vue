@@ -1,7 +1,7 @@
 <template>
   <v-row>
-    <v-col>
-      <languageSelector />
+    <v-col class="language-selector-wrapper">
+      <languageSelector class="language-selector"/>
     </v-col>
     <v-col class="d-flex justify-end">
           <v-btn
@@ -28,8 +28,16 @@
 </script>
 
 <style scoped>
+  .language-selector-wrapper {
+    padding: 20px 0 0 15px;
+  }
+  @media (min-width: 600px) {
+    .language-selector {
+      display: none;
+    }
+  }
   .icon-cross-drawer {
-    padding: 15px 15px 27px 0;
+    margin: 15px 15px 27px 0;
   }
   .icon-cross-drawer svg{
     height: 20px;

@@ -67,7 +67,7 @@
   .lang-list-wrapper {
     padding-top: 15px;
     background-color: white;
-    width: 320px;
+    width: 300px;
     height: 380px;
     display: flex;
     flex-direction: column;
