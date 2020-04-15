@@ -15,14 +15,7 @@
     </v-content>
 
     <appFooter/>
-<!--    <v-footer-->
-<!--      color="cyan"-->
-<!--      app-->
-<!--    >-->
-<!--      <v-spacer/>-->
 
-<!--      <span class="white&#45;&#45;text">&copy; 2019</span>-->
-<!--    </v-footer>-->
   </v-app>
 </template>
 
