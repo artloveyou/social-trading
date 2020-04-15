@@ -29,7 +29,7 @@
     align-items: center;
     align-content: stretch;
 
-    margin-top: -100px;
+    margin-top: -20px;
     height: 100vh;
     width: 100vw;
     background-color: #000000;
