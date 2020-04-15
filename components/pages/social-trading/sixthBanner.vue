@@ -21,28 +21,28 @@
     </v-row>
     <v-row>
 
-      <v-col class="col-12 col-md-3">
+      <v-col class="col-12 col-md-3 d-flex justify-center">
         <div class="mini-card maximum">
           <img src="~/assets/img/iconMaximum.svg"/>
           <div class="mini-card-description">Максимальная относительная просадка</div>
         </div>
       </v-col>
 
-      <v-col class="col-12 col-md-3">
+      <v-col class="col-12 col-md-3 d-flex justify-center">
         <div class="mini-card deposit">
           <img src="~/assets/img/iconDeposit.svg"/>
           <div class="mini-card-description">Максимальная загрузка депозита</div>
         </div>
       </v-col>
 
-      <v-col class="col-12 col-md-3">
+      <v-col class="col-12 col-md-3 d-flex justify-center">
         <div class="mini-card clock">
           <img src="~/assets/img/iconClock.svg"/>
           <div class="mini-card-description">Срок жизни торгового счёта</div>
         </div>
       </v-col>
 
-      <v-col class="col-12 col-md-3">
+      <v-col class="col-12 col-md-3 d-flex justify-center">
         <div class="mini-card scale">
           <img src="~/assets/img/iconScale.svg"/>
           <div class="mini-card-description">Размер кредитного плеча</div>
@@ -71,13 +71,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: stretch;
     border: 2px solid;
     border-radius: 5px 5px;
     padding: 10px 10px;
     height: 80px;
+    width: 350px;
   }
 
   .mini-card-description {
