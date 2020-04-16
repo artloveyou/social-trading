@@ -29,6 +29,7 @@ export default {
   */
   css: [
     '~/css/main.css',
+    '~/css/aos.css',
     'aos/dist/aos.css'
   ],
   /*
@@ -47,6 +48,10 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    // With options
+    // ['fullpage-nuxt', { /* module options */ }],
+    // Simple usage
+    'fullpage-nuxt',
   ],
   /*
   ** vuetify module configuration

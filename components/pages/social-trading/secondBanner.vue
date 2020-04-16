@@ -23,7 +23,7 @@
       </v-col>
 
       <v-col class="col-12 col-md-4 d-flex justify-center">
-        <div data-aos="slide-up" data-aos-duration="1000000">
+        <div data-aos="slide-up" data-aos-duration="1000">
           <secondBannerCard/>
         </div>
       </v-col>

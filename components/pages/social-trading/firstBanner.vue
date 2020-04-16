@@ -1,23 +1,25 @@
 <template>
-    <v-row>
-      <v-col class="banner">
+  <v-row>
+    <v-col class="banner">
+      <div data-aos="zoom-out" data-aos-duration="1000">
         <h1 class="banner-text banner-title banner-center mb-7">Лучший сервис инвестиций</h1>
         <div class="banner-text description banner-center mb-7">
           Social trading создан для тех кто ищет максимальную прибыль и минимальный риск.
           Богатый выбор управляющих, невероятный контроль над инвестициями и возможность общения с трейдерами.
           Инновационная платформа для начинающих и профессиональных инвесторов.
         </div>
-        <v-btn
-          class="mt-7"
-          rounded
-          x-large
-          color="primary"
-          dark
-        >
-          Регистрация
-        </v-btn>
-      </v-col>
-    </v-row>
+      </div>
+      <v-btn
+        class="mt-7"
+        rounded
+        x-large
+        color="primary"
+        dark
+      >
+        Регистрация
+      </v-btn>
+    </v-col>
+  </v-row>
 </template>
 
 <style scoped>

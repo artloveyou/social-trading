@@ -3,16 +3,22 @@
     <v-col class="pa-0 ma-0">
 
       <div class="banner">
+
+        <div class="img-hide" data-aos="slide-left" data-aos-duration="1000"></div>
+
         <img class="img" src="~/assets/img/banner3.png"/>
-        <div class="banner-content">
+
+        <div class="banner-content" data-aos="slide-right" data-aos-duration="1000">
           <h1 class="banner-title grey-text">Рискованно?</h1>
           <h1 class="banner-big-title">Возможно.</h1>
           <h1 class="banner-title grey-text">Прибыльно?</h1>
           <h1 class="banner-big-title">Однозначно да.</h1>
         </div>
+
         <div class="signature grey-text">
-          // Наш самый успешный Ути Пути Мухаммед
+          <div data-aos="slide-left" data-aos-duration="1000">// Наш самый успешный Ути Пути Мухаммед</div>
         </div>
+
       </div>
 
     </v-col>
@@ -27,6 +33,14 @@
   .banner {
     margin-top: 5em;
     position: relative;
+  }
+
+  .img-hide {
+    position: absolute;
+    background-color: #ffffff;
+    width: 40%;
+    height: 100%;
+    right: 100%;
   }
 
   .banner-content {
