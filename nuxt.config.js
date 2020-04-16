@@ -29,7 +29,7 @@ export default {
   */
   css: [
     '~/css/main.css',
-    '~/css/aos.css'
+    'aos/dist/aos.css'
   ],
   /*
   ** Plugins to load before mounting the App
