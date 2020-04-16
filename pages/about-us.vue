@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex class="text-center">
-      About us
+      About Us
     </v-flex>
   </v-layout>
 </template>

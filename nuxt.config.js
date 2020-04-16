@@ -28,12 +28,14 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/css/main.css'
+    '~/css/main.css',
+    '~/css/aos.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/aos.js'
   ],
   /*
   ** Nuxt.js dev-modules

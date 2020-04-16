@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "chart.js": "^2.9.3",
     "nuxt": "^2.0.0",
     "push-dir": "^0.4.1",

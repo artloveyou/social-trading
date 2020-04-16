@@ -23,7 +23,9 @@
       </v-col>
 
       <v-col class="col-12 col-md-4 d-flex justify-center">
-        <secondBannerCard/>
+        <div data-aos="slide-up" data-aos-duration="1000000">
+          <secondBannerCard/>
+        </div>
       </v-col>
 
       <v-col class="col-12 col-md-3 text-block">
@@ -47,7 +49,7 @@
   export default {
     components: {
       secondBannerCard
-    }
+    },
   }
 </script>
 
