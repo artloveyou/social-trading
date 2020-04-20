@@ -3,7 +3,10 @@
   <v-row>
     <v-col class="banner">
 
-      <div data-aos="zoom-out" data-aos-duration="1000">
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+      >
         <h1 class="banner-text banner-title banner-center mb-7">Лучший сервис инвестиций</h1>
         <div class="banner-text description banner-center mb-7">
           Social trading создан для тех кто ищет максимальную прибыль и минимальный риск.
