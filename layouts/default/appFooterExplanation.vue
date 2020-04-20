@@ -1,6 +1,6 @@
 <template>
-  <v-row>
-    <v-col class="footer-explanation">
+
+    <div class="footer-explanation">
       <p>
         Данный веб-сайт является собственностью компании LiteForex Investments Limited.
       </p>
@@ -28,8 +28,8 @@
         "Предупреждение о рисках".
       </p>
       <icon18plus/>
-    </v-col>
-  </v-row>
+    </div>
+
 </template>
 
 <script>
@@ -43,6 +43,7 @@
 
 <style scoped>
 .footer-explanation{
+  padding: 0 20px 0 20px;
   font-size: 0.9em;
   color: #979797;
 }

@@ -1,11 +1,9 @@
 <template>
-  <v-row>
-    <v-col>
+  <div class="col-12 d-flex justify-center">
       <v-divider></v-divider>
       <appTabsFooter/>
       <v-divider></v-divider>
-    </v-col>
-  </v-row>
+  </div>
 </template>
 
 <script>

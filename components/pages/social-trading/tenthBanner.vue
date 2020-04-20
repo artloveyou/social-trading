@@ -9,8 +9,19 @@
           Платформа позволяет поддерживать прямой диалог с выбранным трейдером, благодаря встроенной системе обмена сообщениями.
         </span>
       </h1>
-      <img class="img" src="~/assets/img/banner10.png"/>
+
+      <screenTab :screen="'tab10screen.png'"/>
+<!--      <img class="img" src="~/assets/img/banner10.png"/>-->
     </v-col>
     <v-col class="col-12 col-sm-1"></v-col>
   </v-row>
 </template>
+
+<script>
+  import screenTab from '~/components/pages/social-trading/screenTab.vue'
+  export default {
+    components: {
+      screenTab
+    }
+  }
+</script>

@@ -1,6 +1,5 @@
 <template>
-  <v-row>
-    <v-col class="col-12 d-flex justify-center">
+  <div class="col-12 d-flex justify-center">
       <v-btn fab text>
         <iconFacebook/>
       </v-btn>
@@ -19,8 +18,7 @@
       <v-btn fab text>
         <iconGooglePlus/>
       </v-btn>
-    </v-col>
-  </v-row>
+    </div>
 </template>
 
 <script>

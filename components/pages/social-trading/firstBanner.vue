@@ -1,6 +1,8 @@
 <template>
+
   <v-row>
     <v-col class="banner">
+
       <div data-aos="zoom-out" data-aos-duration="1000">
         <h1 class="banner-text banner-title banner-center mb-7">Лучший сервис инвестиций</h1>
         <div class="banner-text description banner-center mb-7">
@@ -9,6 +11,7 @@
           Инновационная платформа для начинающих и профессиональных инвесторов.
         </div>
       </div>
+
       <v-btn
         class="mt-7"
         rounded
@@ -20,6 +23,7 @@
       </v-btn>
     </v-col>
   </v-row>
+
 </template>
 
 <style scoped>

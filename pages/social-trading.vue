@@ -12,7 +12,6 @@
     <tenthBanner/>
     <eleventhBanner/>
     <twelfthBanner/>
-
   </v-container>
 </template>
 

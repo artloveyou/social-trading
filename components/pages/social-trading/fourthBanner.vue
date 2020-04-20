@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <v-row>
       <v-col class="col-12 col-sm-1"></v-col>
       <v-col class="col-12 col-sm-10 center">
@@ -9,10 +10,13 @@
           период.
         </span>
         </h1>
-        <img class="img" src="~/assets/img/banner4.png"/>
+
+        <screenTab :screen="'tab4screen.gif'" :tab="'tab4.png'"/>
+
       </v-col>
       <v-col class="col-12 col-sm-1"></v-col>
     </v-row>
+
     <v-row>
       <v-col class="col-12 col-sm-1"></v-col>
       <v-col class="col-12 col-sm-10 center">
@@ -73,3 +77,11 @@
   </div>
 </template>
 
+<script>
+  import screenTab from '~/components/pages/social-trading/screenTab.vue'
+  export default {
+    components: {
+      screenTab
+    }
+  }
+</script>

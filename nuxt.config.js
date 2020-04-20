@@ -23,20 +23,22 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#14c9ff' },
   /*
   ** Global CSS
   */
   css: [
     '~/css/main.css',
     '~/css/aos.css',
-    'aos/dist/aos.css'
+    // 'aos/dist/aos.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/aos.js'
+    '~/plugins/aos.js',
+    // '~/plugins/test.js',
+    // '~/plugins/scroll.js',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,9 +51,12 @@ export default {
   */
   modules: [
     // With options
-    // ['fullpage-nuxt', { /* module options */ }],
+    ['fullpage-nuxt', {
+    /* module options */
+      animate: true
+  }],
     // Simple usage
-    'fullpage-nuxt',
+    // 'fullpage-nuxt',
   ],
   /*
   ** vuetify module configuration

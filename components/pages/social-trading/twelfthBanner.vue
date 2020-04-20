@@ -13,8 +13,19 @@
           в зависимости от планируемых сроков инвестиций.
         </span>
       </h1>
-      <img class="img" src="~/assets/img/banner12.png"/>
+
+      <screenTab :screen="'tab12screen.png'"/>
+
     </v-col>
     <v-col class="col-12 col-sm-1"></v-col>
   </v-row>
 </template>
+
+<script>
+  import screenTab from '~/components/pages/social-trading/screenTab.vue'
+  export default {
+    components: {
+      screenTab
+    }
+  }
+</script>

@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <socialIconsLine class="social"/>
-    <appFooterNavigation/>
-    <appFooterExplanation/>
-    <appFooterLinks/>
+        <socialIconsLine class="social"/>
+        <appFooterNavigation/>
+        <appFooterExplanation/>
+        <appFooterLinks/>
   </v-container>
 </template>
 

@@ -9,7 +9,9 @@
             10. Быстрая прибыль и высокий риск или консервативный подход &mdash; выбор за вами.
         </span>
         </h1>
-        <img class="img" src="~/assets/img/banner6.png"/>
+
+        <screenTab :screen="'tab6screen.png'"/>
+
       </v-col>
       <v-col class="col-12 col-sm-1"></v-col>
     </v-row>
@@ -54,8 +56,11 @@
 </template>
 
 <script>
+  import screenTab from '~/components/pages/social-trading/screenTab.vue'
   export default {
-
+    components: {
+      screenTab
+    }
   }
 </script>
 
