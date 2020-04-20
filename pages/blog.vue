@@ -2,6 +2,8 @@
   <v-layout>
     <v-flex class="text-center">
 
+      {{ value }}
+
       <div
         class="animation-start"
         v-scroll="handleScroll"
@@ -16,7 +18,23 @@
 
 <script>
   export default {
-
+    data() {
+      return {
+        interval: {},
+        value: 0,
+      }
+    },
+    beforeDestroy(){
+      clearInterval(this.interval)
+    },
+    mounted(){
+      this.interval = setInterval(()=>{
+        if (this.value === 100){
+          return(this.value =0 )
+        }
+        this.value +=10
+      }, 1000)
+    },
     methods: {
       handleScroll: function (evt, el) {
         if (window.scrollY > 90) {

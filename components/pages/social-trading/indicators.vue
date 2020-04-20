@@ -1,26 +1,50 @@
 <template>
-  <v-layout>
-    <v-flex class="text-center">
-      Partnership
+  <div>
+    <div>Банк депозит</div>
+    <v-progress-linear
+      background-opacity="0.1"
+      rounded
+      :value="values[0].value"
+      color="grey"
+      height="30"
+    >
+      <template v-slot="{ value }">
+        <strong>{{ values[0].value }}% в мес.</strong>
+      </template>
+    </v-progress-linear>
 
-      <div
-        class="first"
-      >
-        Видимость блока {{ isIntersecting }}<br/>
-        Накручиваем value 1 {{ values[0].value }}<br/>
-        Накручиваем value 2 {{ values[1].value }}<br/>
-        Накручиваем value 3 {{ values[2].value }}<br/>
-      </div>
+    <br>
 
-      <div
-        class="intersected"
-        v-intersect="onIntersect"
-      >
+    <div>Акции Apple</div>
+    <v-progress-linear
+      background-opacity="0.1"
+      rounded
+      :value="values[1].value"
+      color="grey"
+      height="30"
+    >
+      <template v-slot="{ value }">
+        <strong>{{ values[1].value }}% в мес.</strong>
+      </template>
+    </v-progress-linear>
 
-      </div>
+    <br>
 
-    </v-flex>
-  </v-layout>
+    <div>Social Trading</div>
+    <v-progress-linear
+      background-opacity="0.1"
+      rounded
+      :value="values[2].value"
+      color="grey"
+      height="30"
+    >
+      <template v-slot="{ value }">
+        <strong>{{ values[2].value }}% в мес.</strong>
+      </template>
+    </v-progress-linear>
+
+    <div v-intersect="onIntersect"></div>
+  </div>
 </template>
 
 <script>
@@ -32,15 +56,15 @@
         values: [
           {
             value: 0,
-            stop: 10,
+            stop: 5,
           },
           {
             value: 0,
-            stop: 20,
+            stop: 15,
           },
           {
             value: 0,
-            stop: 30,
+            stop: 48,
           }
         ],
 
@@ -68,7 +92,7 @@
               item.value += 1
             }
           })
-        }, 50)
+        }, 60)
       },
 
       valueClear: function () {
@@ -81,23 +105,6 @@
   }
 </script>
 
-<style>
-  .first {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
+<style scoped>
 
-    border: 1px solid red;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .intersected {
-    border: 3px solid green;
-    width: 100%;
-    height: 10vh;
-  }
 </style>
