@@ -1,18 +1,20 @@
 <template>
-  <v-container fluid class="pa-0 ma-0">
-    <firstBanner/>
-    <secondBanner/>
-    <thirdBanner/>
-    <fourthBanner/>
-    <fifthBanner/>
-    <sixthBanner/>
-    <seventhBanner/>
-    <eighthBanner/>
-    <ninthBanner/>
-    <tenthBanner/>
-    <eleventhBanner/>
-    <twelfthBanner/>
-  </v-container>
+
+    <v-container fluid class="banners-container">
+      <firstBanner/>
+      <secondBanner/>
+      <thirdBanner/>
+      <fourthBanner/>
+      <fifthBanner/>
+      <sixthBanner/>
+      <seventhBanner/>
+      <eighthBanner/>
+      <ninthBanner/>
+      <tenthBanner/>
+      <eleventhBanner/>
+      <twelfthBanner/>
+    </v-container>
+
 </template>
 
 <script>
@@ -40,4 +42,12 @@
   }
 </script>
 
+<style>
+  .container{
+    padding: 0 !important;
+  }
+  .banners-container{
+    overflow: hidden;
+  }
+</style>
 
