@@ -76,6 +76,7 @@
           }
         ],
 
+        timeout: {},
         interval: {},
         speed: 50
       }
@@ -88,7 +89,7 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.animate = 'animate'
-          setTimeout(() => {
+          this.timeout = setTimeout(() => {
             this.valueIncrement()
           }, 1000)
         } else {
@@ -109,6 +110,7 @@
       },
 
       valueClear: function () {
+        clearTimeout(this.timeout)
         clearInterval(this.interval)
         this.values.forEach(function (item) {
           item.value = 0
