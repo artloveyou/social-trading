@@ -7,9 +7,8 @@
     />
 
     <div class="screen"
-         data-aos="zoom-out"
-         data-aos-duration="1000"
-         data-aos-anchor-placement="top-center"
+         v-intersect="onIntersect"
+         :class="animate"
     >
       <img
         class="img" :src="imageScreen"
@@ -22,23 +21,67 @@
 
 <script>
   export default {
-    props: ['screen', 'tab'],
+    props: ['screen', 'gif', 'tab'],
+    data() {
+      return {
+        isIntersecting: false,
+        animate: false,
+        reload: false
+      }
+    },
     computed: {
       imageScreen() {
-        return require(`~/assets/img/${this.screen}`)
+        if (this.gif === true && this.reload === true) {
+          // reload .gif with once animation every intersection
+          return require(`~/assets/img/${this.screen}`) + "?a=" + Math.random()
+        } else {
+          // don't reload .png
+          return require(`~/assets/img/${this.screen}`)
+        }
       },
       tabScreen() {
-        if (this.tab){
+        if (this.tab) {
           return require(`~/assets/img/${this.tab}`)
         } else {
           return require(`~/assets/img/tab.png`)
         }
       },
+    },
+    methods: {
+      reloadGif() {
+        this.reload = true;
+        // return require(`~/assets/img/${this.screen}`)+"?a="+Math.random()
+      },
+      onIntersect(entries, observer) {
+        this.isIntersecting = entries[0].isIntersecting
+        if (this.isIntersecting === true) {
+          this.reload = true;
+          this.animate = 'animate'
+        } else {
+          this.animate = 'none'
+          this.reload = false;
+        }
+      }
     }
   }
 </script>
 
 <style scoped>
+  .animate {
+    animation: animate 1s 1 ease-in-out;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: scale3d(3, 3, 3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+
   .tab-wrapper {
     position: relative;
   }

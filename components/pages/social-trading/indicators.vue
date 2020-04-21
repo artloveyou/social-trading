@@ -69,6 +69,7 @@
         ],
 
         interval: {},
+        speed: 30
       }
     },
 
@@ -92,7 +93,7 @@
               item.value += 1
             }
           })
-        }, 60)
+        }, this.speed)
       },
 
       valueClear: function () {

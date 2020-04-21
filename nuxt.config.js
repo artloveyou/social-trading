@@ -29,16 +29,14 @@ export default {
   */
   css: [
     '~/css/main.css',
-    '~/css/aos.css',
-    // 'aos/dist/aos.css',
+    // '~/css/aos.css',
+    'aos/dist/aos.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/aos.js',
-    // '~/plugins/test.js',
-    // '~/plugins/scroll.js',
   ],
   /*
   ** Nuxt.js dev-modules

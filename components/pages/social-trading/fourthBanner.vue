@@ -11,7 +11,7 @@
         </span>
         </h1>
 
-        <screenTab :screen="'tab4screen.gif'" :tab="'tab4.png'"/>
+        <screenTab :screen="'tab4screen.gif'" :gif="true" :tab="'tab4.png'"/>
 
       </v-col>
       <v-col class="col-12 col-sm-1"></v-col>

@@ -23,9 +23,11 @@
       </v-col>
 
       <v-col class="col-12 col-md-4 d-flex justify-center">
-        <div data-aos="slide-up" data-aos-duration="500">
+
+        <div v-intersect="onIntersect" :class="animate">
           <secondBannerCard/>
         </div>
+
       </v-col>
 
       <v-col class="col-12 col-md-3 text-block">
@@ -50,6 +52,22 @@
     components: {
       secondBannerCard
     },
+    data() {
+      return {
+        isIntersecting: false,
+        animate: false
+      }
+    },
+    methods: {
+      onIntersect(entries, observer) {
+        this.isIntersecting = entries[0].isIntersecting
+        if (this.isIntersecting === true) {
+          this.animate = 'animate'
+        }else{
+          this.animate = 'none'
+        }
+      }
+    }
   }
 </script>
 
@@ -57,6 +75,21 @@
   @media (max-width: 960px) {
     .text-block {
       text-align: center;
+    }
+  }
+
+  .animate {
+    animation: animate 1s 1 ease-in-out;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translate3d(0, -20%, 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
     }
   }
 </style>
