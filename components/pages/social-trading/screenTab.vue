@@ -68,7 +68,7 @@
 
 <style scoped>
   .animate {
-    animation: animate 1s 1 ease-in-out;
+    animation: animate 1s 1 cubic-bezier(.79,.01,.78,.29);
   }
 
   @keyframes animate {

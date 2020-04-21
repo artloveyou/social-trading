@@ -4,25 +4,15 @@
 
       <div class="banner">
 
-<!--        <div class="img-hide"-->
-<!--             data-aos="slide-left"-->
-<!--             data-aos-duration="1000"-->
-<!--        >-->
-<!--        </div>-->
-
         <div
           class="img-hide"
-             v-intersect="onIntersect"
              :class="animate"
+             v-intersect="onIntersect"
              >
         </div>
 
         <img class="img" src="~/assets/img/banner3.png"/>
 
-<!--        <div class="banner-content"-->
-<!--             data-aos="slide-right"-->
-<!--             data-aos-duration="1000"-->
-<!--             >-->
         <div class="banner-content"
              :class="animateContent"
         >
@@ -32,16 +22,11 @@
           <h1 class="banner-big-title">Однозначно да.</h1>
         </div>
 
-<!--        <div class="signature grey-text">-->
-<!--          <div data-aos="slide-left"-->
-<!--               data-aos-duration="1000"-->
           <div class="signature grey-text"
                :class="animateSignature"
           >// Наш самый успешный Ути Пути Мухаммед
           </div>
         </div>
-
-      </div>
 
     </v-col>
   </v-row>
@@ -76,7 +61,7 @@
 
 <style scoped>
   .animate-signature {
-    animation: animate-signature 1s 1 ease-in-out;
+    animation: animate-signature 1s 1 cubic-bezier(.79,.01,.78,.29);
   }
 
   @keyframes animate-signature {

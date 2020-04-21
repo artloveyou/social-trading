@@ -15,12 +15,11 @@
     "aos": "^2.3.4",
     "chart.js": "^2.9.3",
     "fullpage-nuxt": "0.0.3",
-    "hooper": "^0.3.4",
     "intersection-observer": "^0.8.0",
     "nuxt": "^2.0.0",
     "push-dir": "^0.4.1",
     "vue-chartjs": "^3.5.0",
-    "vue-scrollama": "^1.1.9"
+    "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0"

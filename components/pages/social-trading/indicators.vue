@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div class="indicators-wrapper">
+
+    <div
+      class="indicators-splash"
+      :class="animate">
+      <h1>Сравните</h1>
+    </div>
+
     <div>Банк депозит</div>
     <v-progress-linear
       background-opacity="0.1"
@@ -51,6 +58,7 @@
   export default {
     data() {
       return {
+        animate: false,
         isIntersecting: false,
 
         values: [
@@ -69,7 +77,7 @@
         ],
 
         interval: {},
-        speed: 30
+        speed: 50
       }
     },
 
@@ -79,21 +87,25 @@
         // is located here: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
-          this.valueIncrement()
+          this.animate = 'animate'
+          setTimeout(() => {
+            this.valueIncrement()
+          }, 1000)
         } else {
+          this.animate = 'none'
           this.valueClear()
         }
       },
 
       valueIncrement: function () {
-        this.interval = setInterval(() => {
-          this.values.forEach(function (item) {
-            // console.log(item.stop)
-            if (item.value < item.stop) {
-              item.value += 1
-            }
-          })
-        }, this.speed)
+          this.interval = setInterval(() => {
+            this.values.forEach(function (item) {
+              // console.log(item.stop)
+              if (item.value < item.stop) {
+                item.value += 1
+              }
+            })
+          }, this.speed)
       },
 
       valueClear: function () {
@@ -107,5 +119,40 @@
 </script>
 
 <style scoped>
+  .animate {
+    animation: animate 1s 1 cubic-bezier(.79, .01, .78, .29);
+  }
 
+  @keyframes animate {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .indicators-wrapper {
+    position: relative;
+  }
+
+  .indicators-splash {
+    opacity: 0;
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  h1 {
+    font-size: 4.5em;
+    font-weight: 400;
+  }
 </style>
