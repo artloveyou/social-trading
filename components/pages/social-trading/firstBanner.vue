@@ -1,5 +1,5 @@
 <template>
-
+<!--  https://strategies.ca/resolutions/?local=en#Danielle-->
   <v-row>
     <v-col class="banner">
 
