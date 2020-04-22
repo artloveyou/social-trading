@@ -2,12 +2,14 @@
   <v-row>
     <v-col class="pa-0 ma-0">
 
-      <div class="banner">
+      <div
+        class="banner"
+        v-intersect="onIntersect"
+      >
 
         <div
           class="img-hide"
              :class="animate"
-             v-intersect="onIntersect"
              >
         </div>
 
@@ -61,7 +63,7 @@
 
 <style scoped>
   .animate-signature {
-    animation: animate-signature 1s 1 cubic-bezier(.79,.01,.78,.29);
+    animation: animate-signature 1s 1 cubic-bezier(1,0,.48,.48);
   }
 
   @keyframes animate-signature {
@@ -73,7 +75,7 @@
     }
   }
   .animate-content {
-    animation: animate-content 1s 1 ease-in-out;
+    animation: animate-content 1s 1 cubic-bezier(1,0,.48,.48);
   }
 
   @keyframes animate-content {
@@ -85,7 +87,7 @@
     }
   }
   .animate {
-    animation: animate 1s 1 ease-in-out;
+    animation: animate 1s 1 cubic-bezier(1,0,.48,.48);
   }
 
   @keyframes animate {

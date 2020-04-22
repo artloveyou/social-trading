@@ -1,7 +1,9 @@
 <template>
   <div>
 
-    <v-row>
+    <div class="scroll-anchor" id="second-banner"></div>
+
+    <v-row >
       <v-col class="col-12 col-sm-1"></v-col>
       <v-col class="col-12 col-sm-10">
         <h1 class="banner-title banner-center pa-7">Выберите из более 400 верифицированных трейдеров, основываясь на их
@@ -10,7 +12,7 @@
       <v-col class="col-12 col-sm-1"></v-col>
     </v-row>
 
-    <v-row>
+    <v-row class="pr-5 pl-5">
       <v-col class="col-12 col-md-1"></v-col>
 
       <v-col class="col-12 col-md-3 text-block">
@@ -34,7 +36,7 @@
         <h2 class="text-title">Количество инвесторов</h2>
         <p class="mb-12">Количество инвесторов. Совокупное количество активных инвесторов более 50000.</p>
         <h2 class="text-title">Срок торговли</h2>
-        <p class="mb-12">Срок торговли. Более 150 трейдеров с торогвой историей более 7 лет.</p>
+        <p class="mb-12">Срок торговли. Более 150 трейдеров с торговой историей более 7 лет.</p>
         <h2 class="text-title">Динамика</h2>
         <p>Продвинутый график доходности с возможностью технического анализа.</p>
       </v-col>
@@ -47,10 +49,11 @@
 
 <script>
   import secondBannerCard from '~/components/pages/social-trading/secondBannerCard.vue'
+  import iconScroll from '~/assets/icons/iconScroll'
 
   export default {
     components: {
-      secondBannerCard
+      secondBannerCard, iconScroll
     },
     data() {
       return {

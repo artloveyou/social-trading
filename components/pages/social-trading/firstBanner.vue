@@ -26,13 +26,28 @@
         Регистрация
       </v-btn>
 
+      <v-btn
+        rounded
+        v-scroll-to="'#second-banner'"
+        class="icon-scroll-dark mt-12"
+        text
+        large
+      >
+        <iconScroll class="icon-scroll"/>
+      </v-btn>
+
     </v-col>
   </v-row>
 
 </template>
 
 <script>
+  import iconScroll from '~/assets/icons/iconScroll'
+
   export default {
+    components: {
+      iconScroll
+    },
     data() {
       return {
         isIntersecting: false,
@@ -44,7 +59,7 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.animate = 'animate'
-        }else{
+        } else {
           this.animate = 'none'
         }
       }
@@ -67,6 +82,7 @@
       opacity: 1;
     }
   }
+
   .banner {
     display: flex;
     flex-direction: column;

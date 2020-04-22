@@ -40,12 +40,28 @@
   height: 100%;
   right: 100%;
 }
+
 .img-hide-right {
   position: absolute;
   background-color: #ffffff;
   width: 100%;
   height: 100%;
   left: 100%;
+}
+
+.icon-scroll {
+  transform: scale(3);
+}
+.icon-scroll-light svg {
+  fill: #8F959A;
+}
+
+.icon-scroll-dark svg {
+  fill: #ffffff;
+}
+
+.scroll-anchor {
+  height: 100px;
 }
 
 @media (max-width: 600px) {

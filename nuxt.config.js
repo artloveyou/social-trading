@@ -48,6 +48,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+
     // With options
     ['fullpage-nuxt', {
     /* module options */
@@ -55,6 +56,11 @@ export default {
   }],
     // Simple usage
     // 'fullpage-nuxt',
+
+    //'vue-scrollto/nuxt',
+    // Or if you have custom options...
+    ['vue-scrollto/nuxt', { duration: 300 }],
+
   ],
   /*
   ** vuetify module configuration

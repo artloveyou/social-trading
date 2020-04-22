@@ -1,5 +1,4 @@
 <template>
-
     <v-container fluid class="banners-container">
       <firstBanner/>
       <secondBanner/>
@@ -14,7 +13,6 @@
       <eleventhBanner/>
       <twelfthBanner/>
     </v-container>
-
 </template>
 
 <script>

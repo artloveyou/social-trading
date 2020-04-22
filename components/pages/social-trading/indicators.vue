@@ -1,5 +1,5 @@
 <template>
-  <div class="indicators-wrapper">
+  <div class="indicators-wrapper pr-5 pl-5">
 
     <div
       class="indicators-splash"
