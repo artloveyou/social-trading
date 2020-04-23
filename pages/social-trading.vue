@@ -1,51 +1,42 @@
 <template>
-    <v-container fluid class="banners-container">
-      <firstBanner/>
-      <secondBanner/>
-      <thirdBanner/>
-      <fourthBanner/>
-      <fifthBanner/>
-      <sixthBanner/>
-      <seventhBanner/>
-      <eighthBanner/>
-      <ninthBanner/>
-      <tenthBanner/>
-      <eleventhBanner/>
-      <twelfthBanner/>
-    </v-container>
+  <component :is="pageType" />
 </template>
 
 <script>
-  import firstBanner from '~/components/pages/social-trading/firstBanner.vue'
-  import secondBanner from '~/components/pages/social-trading/secondBanner.vue'
-  import thirdBanner from '~/components/pages/social-trading/thirdBanner.vue'
-  import fourthBanner from '~/components/pages/social-trading/fourthBanner.vue'
-  import fifthBanner from '~/components/pages/social-trading/fifthBanner.vue'
-  import sixthBanner from '~/components/pages/social-trading/sixthBanner.vue'
-  import seventhBanner from '~/components/pages/social-trading/seventhBanner.vue'
-  import eighthBanner from '~/components/pages/social-trading/eighthBanner.vue'
-  import ninthBanner from '~/components/pages/social-trading/ninthBanner.vue'
-  import tenthBanner from '~/components/pages/social-trading/tenthBanner.vue'
-  import eleventhBanner from '~/components/pages/social-trading/eleventhBanner.vue'
-  import twelfthBanner from '~/components/pages/social-trading/twelfthBanner.vue'
+  import pageFull from '~/components/pages/social-trading/pageFull.vue'
+  import pageMobile from '~/components/pages/social-trading/pageMobile.vue'
 
   export default {
     components: {
-      firstBanner, secondBanner, thirdBanner, fourthBanner, fifthBanner, sixthBanner, seventhBanner, eighthBanner,
-      ninthBanner, tenthBanner, eleventhBanner, twelfthBanner
+      pageFull, pageMobile
     },
-    data() {
-      return {}
+    data(){
+      return {
+        width: 1600,
+        window: {
+          width: 0
+        }
+      }
+    },
+    created() {
+      window.addEventListener('resize', this.handleResize);
+      this.handleResize();
+    },
+    destroyed() {
+      window.removeEventListener('resize', this.handleResize);
+    },
+    methods: {
+      handleResize() {
+        this.window.width = window.innerWidth;
+      },
+    },
+    computed: {
+      pageType: function () {
+        return this.window.width > this.width ? 'pageFull' : 'pageMobile';
+      }
     }
   }
 </script>
 
-<style>
-  .container{
-    padding: 0 !important;
-  }
-  .banners-container{
-    overflow: hidden;
-  }
-</style>
+
 

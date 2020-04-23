@@ -1,7 +1,7 @@
 <template>
-  <v-row>
-    <v-col class="col-12 col-sm-1"></v-col>
-    <v-col class="col-12 col-sm-10 center">
+
+  <div class="banner-with-tab">
+
       <h1 class="banner-title-small banner-center pa-7">Единственный способ увеличить инвестиции –
         бесстрастно анализировать.
         <span class="grey-text">
@@ -16,9 +16,8 @@
 
       <screenTab :screen="'tab12screen.png'"/>
 
-    </v-col>
-    <v-col class="col-12 col-sm-1"></v-col>
-  </v-row>
+  </div>
+
 </template>
 
 <script>
@@ -29,3 +28,9 @@
     }
   }
 </script>
+
+<style>
+  .banner-title-small{
+    font-size: 1.5em;
+  }
+</style>

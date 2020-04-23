@@ -13,7 +13,8 @@
              >
         </div>
 
-        <img class="img" src="~/assets/img/banner3.png"/>
+        <img class="img"
+             src="~/assets/img/banner3.png"/>
 
         <div class="banner-content"
              :class="animateContent"
@@ -74,6 +75,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   .animate-content {
     animation: animate-content 1s 1 cubic-bezier(1,0,.48,.48);
   }
@@ -100,7 +102,6 @@
   }
 
   .banner {
-    margin-top: 5em;
     position: relative;
   }
 

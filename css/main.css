@@ -10,15 +10,17 @@
 
 .banner-title {
   font-size: 3em;
+  font-weight: 400;
 }
 
 .banner-title-small {
-  margin-top: 100px;
   font-size: 2em;
+  font-weight: 400;
 }
 
 .text-title {
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 .banner-big-title {
@@ -29,8 +31,22 @@
   position: relative;
 }
 
+.img-banner {
+  width: 100%;
+  max-width: 1000px;
+}
+
 .img {
   width: 100%;
+}
+
+.banner-with-tab{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
 
 .img-hide {
@@ -52,6 +68,7 @@
 .icon-scroll {
   transform: scale(3);
 }
+
 .icon-scroll-light svg {
   fill: #8F959A;
 }

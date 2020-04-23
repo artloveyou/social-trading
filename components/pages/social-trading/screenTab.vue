@@ -3,7 +3,7 @@
   <div class="tab-wrapper">
 
     <img
-      class="img" :src="tabScreen"
+      class="img-banner" :src="tabScreen"
     />
 
     <div class="screen"
@@ -11,7 +11,7 @@
          :class="animate"
     >
       <img
-        class="img" :src="imageScreen"
+        class="img-banner" :src="imageScreen"
       />
     </div>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="scroll-anchor" id="second-banner"></div>
+<!--    <div class="scroll-anchor" id="second-banner"></div>-->
 
     <v-row >
       <v-col class="col-12 col-sm-1"></v-col>

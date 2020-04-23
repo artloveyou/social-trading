@@ -1,5 +1,5 @@
 <template>
-<!--  https://strategies.ca/resolutions/?local=en#Danielle-->
+
   <v-row>
     <v-col class="banner">
 
@@ -33,7 +33,6 @@
         text
         large
       >
-        <iconScroll class="icon-scroll"/>
       </v-btn>
 
     </v-col>

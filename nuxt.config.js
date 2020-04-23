@@ -37,6 +37,7 @@ export default {
   */
   plugins: [
     '~/plugins/aos.js',
+    // '~/plugins/swiper.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -48,7 +49,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-
     // With options
     ['fullpage-nuxt', {
     /* module options */

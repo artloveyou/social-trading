@@ -1,57 +1,72 @@
 <template>
-  <div class="indicators-wrapper pr-5 pl-5">
 
-    <div
-      class="indicators-splash"
-      :class="animate">
-      <h1>Сравните</h1>
+  <div>
+
+    <div class="banner-with-tab">
+
+      <h1 class="banner-title-small banner-center pa-7" style="max-width: 1100px">Доходность.
+        <span class="grey-text">
+          Больше, чем вы ожидаете. Отслеживайте процент доходности трейдера за всё время торговли или за выбранный
+          период.
+        </span>
+      </h1>
     </div>
 
-    <div>Банк депозит</div>
-    <v-progress-linear
-      background-opacity="0.1"
-      rounded
-      :value="values[0].value"
-      color="grey"
-      height="30"
-    >
-      <template v-slot="{ value }">
-        <strong>{{ values[0].value }}% в мес.</strong>
-      </template>
-    </v-progress-linear>
+    <div class="indicators-wrapper pr-5 pl-5">
+      <div
+        class="indicators-splash"
+        :class="animate">
+        <h1 class="compare">Сравните</h1>
+      </div>
 
-    <br>
+      <div>Банк депозит</div>
+      <v-progress-linear
+        background-opacity="0.1"
+        rounded
+        :value="values[0].value"
+        color="grey"
+        height="30"
+      >
+        <template v-slot="{ value }">
+          <strong>{{ values[0].value }}% в мес.</strong>
+        </template>
+      </v-progress-linear>
 
-    <div>Акции Apple</div>
-    <v-progress-linear
-      background-opacity="0.1"
-      rounded
-      :value="values[1].value"
-      color="grey"
-      height="30"
-    >
-      <template v-slot="{ value }">
-        <strong>{{ values[1].value }}% в мес.</strong>
-      </template>
-    </v-progress-linear>
+      <br>
 
-    <br>
+      <div>Акции Apple</div>
+      <v-progress-linear
+        background-opacity="0.1"
+        rounded
+        :value="values[1].value"
+        color="grey"
+        height="30"
+      >
+        <template v-slot="{ value }">
+          <strong>{{ values[1].value }}% в мес.</strong>
+        </template>
+      </v-progress-linear>
 
-    <div>Social Trading</div>
-    <v-progress-linear
-      background-opacity="0.1"
-      rounded
-      :value="values[2].value"
-      color="grey"
-      height="30"
-    >
-      <template v-slot="{ value }">
-        <strong>{{ values[2].value }}% в мес.</strong>
-      </template>
-    </v-progress-linear>
+      <br>
 
-    <div v-intersect="onIntersect"></div>
+      <div>Social Trading</div>
+      <v-progress-linear
+        background-opacity="0.1"
+        rounded
+        :value="values[2].value"
+        color="grey"
+        height="30"
+      >
+        <template v-slot="{ value }">
+          <strong>{{ values[2].value }}% в мес.</strong>
+        </template>
+      </v-progress-linear>
+
+      <div v-intersect="onIntersect"></div>
+    </div>
+
   </div>
+
 </template>
 
 <script>
@@ -99,14 +114,14 @@
       },
 
       valueIncrement: function () {
-          this.interval = setInterval(() => {
-            this.values.forEach(function (item) {
-              // console.log(item.stop)
-              if (item.value < item.stop) {
-                item.value += 1
-              }
-            })
-          }, this.speed)
+        this.interval = setInterval(() => {
+          this.values.forEach(function (item) {
+            // console.log(item.stop)
+            if (item.value < item.stop) {
+              item.value += 1
+            }
+          })
+        }, this.speed)
       },
 
       valueClear: function () {
@@ -153,8 +168,14 @@
     align-content: stretch;
   }
 
-  h1 {
-    font-size: 4.5em;
+  .compare {
+    font-size: 6.5em;
     font-weight: 400;
+  }
+
+  @media (max-width: 1000px) {
+    .compare {
+      font-size: 3.5em;
+    }
   }
 </style>

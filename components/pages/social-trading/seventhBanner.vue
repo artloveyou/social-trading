@@ -2,19 +2,22 @@
   <v-row>
     <v-col class="pa-0 ma-0">
 
-      <div class="banner">
+      <div
+        class="banner"
+        v-intersect="onIntersect"
+      >
 
-        <div class="img-hide"
-             data-aos="slide-left"
-             data-aos-duration="1000"
+        <div
+          class="img-hide"
+          :class="animate"
         >
         </div>
 
-        <img class="img" src="~/assets/img/banner7.png"/>
+        <img class="img"
+             src="~/assets/img/banner7.png"/>
 
         <div class="banner-content"
-             data-aos="slide-right"
-             data-aos-duration="1000"
+             :class="animateContent"
         >
           <h1 class="banner-title grey-text">Рискованно?</h1>
           <h1 class="banner-big-title">Возможно.</h1>
@@ -22,13 +25,10 @@
           <h1 class="banner-big-title">Однозначно да.</h1>
         </div>
 
-        <div class="signature grey-text">
-          <div data-aos="slide-left"
-               data-aos-duration="1000"
-          >// Наш самый успешный Ути Пути Мухаммед
-          </div>
+        <div class="signature grey-text"
+             :class="animateSignature"
+        >// Наш самый успешный Ути Пути Мухаммед
         </div>
-
       </div>
 
     </v-col>
@@ -36,12 +36,72 @@
 </template>
 
 <script>
-
+  export default {
+    data() {
+      return {
+        isIntersecting: false,
+        animate: false,
+        animateContent: false,
+        animateSignature: false,
+      }
+    },
+    methods: {
+      onIntersect(entries, observer) {
+        this.isIntersecting = entries[0].isIntersecting
+        if (this.isIntersecting === true) {
+          this.animate = 'animate'
+          this.animateContent = 'animate-content'
+          this.animateSignature = 'animate-signature'
+        }else{
+          this.animate = 'none'
+          this.animateContent = 'none'
+          this.animateSignature = 'none'
+        }
+      }
+    }
+  }
 </script>
 
 <style scoped>
+  .animate-signature {
+    animation: animate-signature 1s 1 cubic-bezier(1,0,.48,.48);
+  }
+
+  @keyframes animate-signature {
+    0% {
+      transform: translate3d(150%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .animate-content {
+    animation: animate-content 1s 1 cubic-bezier(1,0,.48,.48);
+  }
+
+  @keyframes animate-content {
+    0% {
+      transform: translate3d(-120%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate {
+    animation: animate 1s 1 cubic-bezier(1,0,.48,.48);
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translate3d(100%, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
   .banner {
-    margin-top: 5em;
     position: relative;
   }
 
@@ -58,21 +118,21 @@
       margin-top: 1em;
     }
     .banner-content {
-      top: 25px;
-      left: 20px;
+      top: 15px;
+      left: 30px;
     }
     .signature {
       font-size: 0.6em;
-      width: 100px;
-      left: 70%;
-      bottom: 30%;
+      width: 150px;
+      left: 30px;
+      bottom: 15px;
     }
     .banner-title {
-      font-size: 0.8em;
+      font-size: 1em;
     }
 
     .banner-big-title {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
   }
 
@@ -90,10 +150,9 @@
       font-size: 2em;
     }
     .signature {
-      width: 150px;
       font-size: 0.8em;
-      left: 70%;
-      bottom: 30%;
+      left: 50px;
+      bottom: 25px;
     }
   }
   @media (min-width: 960px) and (max-width: 1200px) {
@@ -110,9 +169,7 @@
       font-size: 3em;
     }
     .signature {
-      width: 200px;
-      left: 70%;
-      bottom: 30%;
+      left: 50px;
     }
   }
   @media (min-width: 1200px) {
@@ -120,11 +177,5 @@
       top: 20%;
       left: 120px;
     }
-    .signature {
-      width: 200px;
-      left: 70%;
-      bottom: 30%;
-    }
   }
 </style>
-
