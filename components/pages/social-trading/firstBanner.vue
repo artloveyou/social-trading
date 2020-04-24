@@ -110,6 +110,8 @@
   }
 
   .description {
-    max-width: 600px;
+    font-size: 17px;
+    max-width: 700px;
+    line-height: 160%;
   }
 </style>

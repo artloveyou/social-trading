@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
 .icon {
   height: 33px;
   fill: #8e9aac;
@@ -10,7 +17,7 @@
 
 .banner-title {
   font-size: 3em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .banner-title-small {

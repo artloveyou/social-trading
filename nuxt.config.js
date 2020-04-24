@@ -29,15 +29,11 @@ export default {
   */
   css: [
     '~/css/main.css',
-    // '~/css/aos.css',
-    'aos/dist/aos.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/aos.js',
-    // '~/plugins/swiper.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,18 +45,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    // With options
-    ['fullpage-nuxt', {
-    /* module options */
-      animate: true
-  }],
-    // Simple usage
-    // 'fullpage-nuxt',
-
-    //'vue-scrollto/nuxt',
-    // Or if you have custom options...
-    ['vue-scrollto/nuxt', { duration: 300 }],
-
   ],
   /*
   ** vuetify module configuration

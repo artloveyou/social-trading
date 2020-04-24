@@ -37,8 +37,8 @@
     },
     data: () => ({
       selector: false,
-      activeCode: 'en',
-      activeName: 'English',
+      activeCode: 'ru',
+      activeName: 'Russian',
       items: languages
     }),
     methods: {
