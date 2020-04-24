@@ -1,9 +1,9 @@
 <template>
   <div>
 
-<!--    <div class="scroll-anchor" id="second-banner"></div>-->
+    <!--    <div class="scroll-anchor" id="second-banner"></div>-->
 
-    <v-row >
+    <v-row>
       <v-col class="col-12 col-sm-1"></v-col>
       <v-col class="col-12 col-sm-10">
         <h1 class="banner-title banner-center pa-7">Выберите из более 400 верифицированных трейдеров, основываясь на их
@@ -25,11 +25,12 @@
       </v-col>
 
       <v-col class="col-12 col-md-4 d-flex justify-center">
-
-        <div v-intersect="onIntersect" :class="animate">
-          <secondBannerCard/>
+        <div class="load-banner"
+             :class="showBanner">
+          <div v-intersect="onIntersect" :class="animate">
+            <secondBannerCard/>
+          </div>
         </div>
-
       </v-col>
 
       <v-col class="col-12 col-md-3 text-block">
@@ -58,6 +59,7 @@
     data() {
       return {
         isIntersecting: false,
+        showBanner: false,
         animate: false
       }
     },
@@ -66,8 +68,10 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.animate = 'animate'
-        }else{
+          this.showBanner = 'show-banner'
+        } else {
           this.animate = 'none'
+          this.showBanner = 'none'
         }
       }
     }

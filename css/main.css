@@ -49,12 +49,13 @@
   align-content: stretch;
 }
 
-.img-hide {
-  position: absolute;
-  background-color: #ffffff;
-  width: 100%;
-  height: 100%;
-  right: 100%;
+.load-banner {
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.show-banner {
+  opacity: 1;
 }
 
 .img-hide-right {

@@ -3,16 +3,20 @@
   <div class="tab-wrapper">
 
     <img
-      class="img-banner" :src="tabScreen"
+      class="img-banner"
+      :src="tabScreen"
     />
 
-    <div class="screen"
-         v-intersect="onIntersect"
-         :class="animate"
-    >
-      <img
-        class="img-banner" :src="imageScreen"
-      />
+    <div class="load-banner"
+         :class="showBanner">
+      <div class="screen"
+           v-intersect="onIntersect"
+           :class="animate"
+      >
+        <img
+          class="img-banner" :src="imageScreen"
+        />
+      </div>
     </div>
 
   </div>
@@ -25,6 +29,7 @@
     data() {
       return {
         isIntersecting: false,
+        showBanner: false,
         animate: false,
         reload: false
       }
@@ -56,9 +61,11 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.reload = true;
+          this.showBanner = 'show-banner'
           this.animate = 'animate'
         } else {
           this.animate = 'none'
+          this.showBanner = 'none'
           this.reload = false;
         }
       }
@@ -67,8 +74,9 @@
 </script>
 
 <style scoped>
+
   .animate {
-    animation: animate 1s 1 cubic-bezier(.79,.01,.78,.29);
+    animation: animate 1s 1 cubic-bezier(.79, .01, .78, .29);
   }
 
   @keyframes animate {

@@ -3,6 +3,9 @@
   <v-row>
     <v-col class="banner">
 
+      <div class="load-banner"
+           :class="showBanner">
+
       <div
         v-intersect="onIntersect"
         :class="animate">
@@ -13,6 +16,8 @@
           Богатый выбор управляющих, невероятный контроль над инвестициями и возможность общения с трейдерами.
           Инновационная платформа для начинающих и профессиональных инвесторов.
         </div>
+
+      </div>
 
       </div>
 
@@ -50,6 +55,7 @@
     data() {
       return {
         isIntersecting: false,
+        showBanner: false,
         animate: false
       }
     },
@@ -58,8 +64,10 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.animate = 'animate'
+          this.showBanner = 'show-banner'
         } else {
           this.animate = 'none'
+          this.showBanner = 'none'
         }
       }
     }
@@ -67,6 +75,7 @@
 </script>
 
 <style scoped>
+
   .animate {
     animation: animate 1s 1 ease-in-out;
   }

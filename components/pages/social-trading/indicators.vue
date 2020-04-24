@@ -13,56 +13,61 @@
     </div>
 
     <div class="indicators-wrapper pr-5 pl-5">
+
       <div
         class="indicators-splash"
         :class="animate">
         <h1 class="compare">Сравните</h1>
       </div>
 
-      <div>Банк депозит</div>
-      <v-progress-linear
-        background-opacity="0.1"
-        rounded
-        :value="values[0].value"
-        color="grey"
-        height="30"
-      >
-        <template v-slot="{ value }">
-          <strong>{{ values[0].value }}% в мес.</strong>
-        </template>
-      </v-progress-linear>
+      <div class="load-banner"
+           :class="showBanner">
+        <div>Банк депозит</div>
+        <v-progress-linear
+          background-opacity="0.1"
+          rounded
+          :value="values[0].value"
+          color="grey"
+          height="30"
+        >
+          <template v-slot="{ value }">
+            <strong>{{ values[0].value }}% в мес.</strong>
+          </template>
+        </v-progress-linear>
 
-      <br>
+        <br>
 
-      <div>Акции Apple</div>
-      <v-progress-linear
-        background-opacity="0.1"
-        rounded
-        :value="values[1].value"
-        color="grey"
-        height="30"
-      >
-        <template v-slot="{ value }">
-          <strong>{{ values[1].value }}% в мес.</strong>
-        </template>
-      </v-progress-linear>
+        <div>Акции Apple</div>
+        <v-progress-linear
+          background-opacity="0.1"
+          rounded
+          :value="values[1].value"
+          color="grey"
+          height="30"
+        >
+          <template v-slot="{ value }">
+            <strong>{{ values[1].value }}% в мес.</strong>
+          </template>
+        </v-progress-linear>
 
-      <br>
+        <br>
 
-      <div>Social Trading</div>
-      <v-progress-linear
-        background-opacity="0.1"
-        rounded
-        :value="values[2].value"
-        color="grey"
-        height="30"
-      >
-        <template v-slot="{ value }">
-          <strong>{{ values[2].value }}% в мес.</strong>
-        </template>
-      </v-progress-linear>
+        <div>Social Trading</div>
+        <v-progress-linear
+          background-opacity="0.1"
+          rounded
+          :value="values[2].value"
+          color="grey"
+          height="30"
+        >
+          <template v-slot="{ value }">
+            <strong>{{ values[2].value }}% в мес.</strong>
+          </template>
+        </v-progress-linear>
+      </div>
 
       <div v-intersect="onIntersect"></div>
+
     </div>
 
   </div>
@@ -74,6 +79,7 @@
     data() {
       return {
         animate: false,
+        showBanner: false,
         isIntersecting: false,
 
         values: [
@@ -104,11 +110,13 @@
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
           this.animate = 'animate'
+          this.showBanner = 'show-banner'
           this.timeout = setTimeout(() => {
             this.valueIncrement()
           }, 1000)
         } else {
           this.animate = 'none'
+          this.showBanner = 'none'
           this.valueClear()
         }
       },
