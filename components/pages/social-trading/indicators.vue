@@ -4,7 +4,7 @@
 
     <div class="banner-with-tab">
 
-      <h1 class="banner-title-small banner-center pa-7" style="max-width: 1100px">Доходность.
+      <h1 class="banner-title-small banner-center pa-7">Доходность.
         <span class="grey-text">
           Больше, чем вы ожидаете. Отслеживайте процент доходности трейдера за всё время торговли или за выбранный
           период.
