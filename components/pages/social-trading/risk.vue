@@ -3,8 +3,14 @@
     v-intersect="onIntersect">
     <v-row>
       <v-col class="col-12 center">
-        <img class="img risk" src="~/assets/img/3.png"/>
-        <h4>УРОВЕНЬ РИСКА</h4>
+        <div class="load-banner"
+             :class="showBanner">
+          <div
+            :class="animate">
+            <img class="img risk" src="~/assets/img/3.png"/>
+            <h4>УРОВЕНЬ РИСКА</h4>
+          </div>
+        </div>
       </v-col>
     </v-row>
     <v-row>
@@ -58,6 +64,8 @@
     data() {
       return {
         isIntersecting: false,
+        showBanner: false,
+        animate: false,
         maximumAnimate: false,
         maximumAnimateTimeout: {},
         depositAnimate: false,
@@ -72,6 +80,8 @@
       onIntersect(entries, observer) {
         this.isIntersecting = entries[0].isIntersecting
         if (this.isIntersecting === true) {
+          this.animate = 'animate-digit'
+          this.showBanner = 'show-banner'
           this.maximumAnimateTimeout = setTimeout(() => {
             this.maximumAnimate = 'maximum-end'
           }, 500)
@@ -85,6 +95,8 @@
             this.scaleAnimate = 'scale-end'
           }, 2000)
         } else {
+          this.animate = 'none'
+          this.showBanner = 'none'
           this.maximumAnimate = 'none'
           this.depositAnimate = 'none'
           this.clockAnimate = 'none'
@@ -96,6 +108,21 @@
 </script>
 
 <style>
+  .animate-digit {
+    animation: animate-digit 1s 1 ease-in-out;
+  }
+
+  @keyframes animate-digit {
+    0% {
+      transform: scale3d(3, 3, 3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+
   .center {
     text-align: center;
   }

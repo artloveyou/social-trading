@@ -28,9 +28,3 @@
     }
   }
 </script>
-
-<style>
-  .banner-title-small{
-    font-size: 1.5em;
-  }
-</style>
