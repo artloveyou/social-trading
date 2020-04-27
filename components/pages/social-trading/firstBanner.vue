@@ -106,6 +106,7 @@
   }
 
   .banner-text {
+    font-weight: 500;
     color: #ffffff;
   }
 

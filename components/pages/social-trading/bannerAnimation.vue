@@ -19,7 +19,7 @@
           >
             <slot name="content"></slot>
           </div>
-          <div class="signature grey-text"
+          <div class="signature"
                :class="animateSignature"
           >
             <slot name="signature"></slot>
@@ -116,26 +116,13 @@
     }
   }
 
-
-  /*.animate {*/
-  /*  animation: animate 1s 1 cubic-bezier(1,0,.48,.48);*/
-  /*}*/
-
-  /*@keyframes animate {*/
-  /*  0% {*/
-  /*    transform: translate3d(100%, 0, 0);*/
-  /*  }*/
-  /*  100% {*/
-  /*    transform: translate3d(0, 0, 0);*/
-  /*  }*/
-  /*}*/
-
   .banner {
     position: relative;
   }
 
 
   .signature {
+    color: #707070;
     position: absolute;
     bottom: 50px;
     left: 120px;

@@ -27,6 +27,14 @@
   line-height: 120%;
 }
 
+.grey-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+  color: #707070;
+}
+
 .text-title {
   font-size: 1.5em;
   font-weight: bold;
@@ -76,22 +84,6 @@
   left: 100%;
 }
 
-.icon-scroll {
-  transform: scale(3);
-}
-
-.icon-scroll-light svg {
-  fill: #8F959A;
-}
-
-.icon-scroll-dark svg {
-  fill: #ffffff;
-}
-
-.scroll-anchor {
-  height: 100px;
-}
-
 @media (max-width: 600px) {
   .banner-title {
     font-size: 1.5em;
@@ -111,8 +103,4 @@
 
 .banner-center {
   text-align: center;
-}
-
-.grey-text {
-  color: #707070;
 }
