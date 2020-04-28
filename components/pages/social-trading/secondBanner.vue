@@ -1,21 +1,15 @@
 <template>
   <div>
 
-    <!--    <div class="scroll-anchor" id="second-banner"></div>-->
-
-    <v-row>
-      <v-col class="col-12 col-sm-1"></v-col>
-      <v-col class="col-12 col-sm-10">
-        <h1 class="banner-title banner-center pa-7">Выберите из более 400 верифицированных трейдеров, основываясь на их
-          объективных показателях</h1>
-      </v-col>
-      <v-col class="col-12 col-sm-1"></v-col>
-    </v-row>
+    <h1 class="banner-title banner-center pt-7 pb-7">
+      Выберите из более 400 верифицированных трейдеров, основываясь на их
+      объективных показателях
+    </h1>
 
     <v-row class="pr-5 pl-5">
       <v-col class="col-12 col-md-1"></v-col>
 
-      <v-col class="col-12 col-md-3 text-block">
+      <v-col class="col-12 col-md-3 text-block padding-top">
         <h2 class="text-title">Доходность</h2>
         <p class="mb-12">Средняя доходность топ-100 трейдеров платформы social trading &mdash; 230 процентов.</p>
         <h2 class="text-title">Риск</h2>
@@ -33,7 +27,7 @@
         </div>
       </v-col>
 
-      <v-col class="col-12 col-md-3 text-block">
+      <v-col class="col-12 col-md-3 text-block padding-top">
         <h2 class="text-title">Количество инвесторов</h2>
         <p class="mb-12">Количество инвесторов. Совокупное количество активных инвесторов более 50000.</p>
         <h2 class="text-title">Срок торговли</h2>
@@ -79,6 +73,9 @@
 </script>
 
 <style scoped>
+  .padding-top {
+    padding-top: 70px;
+  }
   @media (max-width: 960px) {
     .text-block {
       text-align: center;

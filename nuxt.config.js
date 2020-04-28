@@ -29,6 +29,7 @@ export default {
   */
   css: [
     '~/css/main.css',
+    '~/css/buttons.css'
   ],
   /*
   ** Plugins to load before mounting the App

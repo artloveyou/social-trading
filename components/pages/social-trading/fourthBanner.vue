@@ -2,14 +2,14 @@
 
   <div class="banner-with-tab">
 
-        <h1 class="banner-title-small banner-center pa-7">Доходность.
-          <span class="grey-text">
+    <h1 class="banner-title-small banner-center pa-7">Доходность.
+      <span class="grey-text">
           Больше, чем вы ожидаете. Отслеживайте процент доходности трейдера за всё время торговли или за выбранный
           период.
         </span>
-        </h1>
+    </h1>
 
-        <screenTab :screen="'tab4screen.gif'" :gif="true" :tab="'tab4.png'"/>
+    <screenTab :screen="'tab4screen.gif'" :gif="true" :tab="'tab4.png'"/>
 
   </div>
 

@@ -11,7 +11,7 @@
         :class="animate">
 
         <h1 class="banner-text banner-title banner-center mb-7">Лучший сервис инвестиций</h1>
-        <div class="banner-text description banner-center mb-7">
+        <div class="banner-text description banner-center mb-7" style="color: #cccccc">
           Social trading создан для тех кто ищет максимальную прибыль и минимальный риск.
           Богатый выбор управляющих, невероятный контроль над инвестициями и возможность общения с трейдерами.
           Инновационная платформа для начинающих и профессиональных инвесторов.
@@ -21,15 +21,11 @@
 
       </div>
 
-      <v-btn
-        class="mt-7"
-        rounded
-        x-large
-        color="primary"
-        dark
-      >
-        Регистрация
-      </v-btn>
+      <div
+        v-ripple
+        class="button rounded registration">
+        РЕГИСТРАЦИЯ
+      </div>
 
       <v-btn
         rounded
@@ -75,6 +71,16 @@
 </script>
 
 <style scoped>
+  .registration {
+    color: #ffffff;
+    background-color: #007FD8;
+    border: 1px solid #007FD8;
+    min-width: 207px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+  }
 
   .animate {
     animation: animate 1s 1 ease-in-out;

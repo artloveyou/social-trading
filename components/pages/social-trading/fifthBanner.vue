@@ -1,7 +1,7 @@
 <template>
   <bannerAnimation :image="'banner5.png'">
     <template v-slot:content>
-      <h1 class="banner-title grey-text">Рискованно?</h1>
+      <h1 class="banner-title grey-text-big">Рискованно?</h1>
       <h1 class="banner-big-title">Возможно.</h1>
     </template>
     <template v-slot:signature>

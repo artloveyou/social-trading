@@ -1,23 +1,7 @@
 <template>
-      <div class="text-center text-transform-none">
-        <v-btn
-          class="custom-transform-class text-none"
-          rounded
-          outlined
-          color="primary"
-          dark
-        >
-          Sign in
-        </v-btn>
-      </div>
+  <div
+    v-ripple
+    class="button rounded sign-in ma-2">
+    Sign in
+  </div>
 </template>
-
-<script>
-    export default {
-        name: "signIn"
-    }
-</script>
-
-<style scoped>
-
-</style>

@@ -1,22 +1,7 @@
 <template>
-      <div class="text-center ma-4">
-        <v-btn
-          class="custom-transform-class text-none"
-          outlined color="primary"
-          width="100%"
-          dark
-        >
-          Sign in
-        </v-btn>
-      </div>
+  <div
+    v-ripple
+    class="button sign-in ma-2">
+    Sign in
+  </div>
 </template>
-
-<script>
-    export default {
-        name: "signIn"
-    }
-</script>
-
-<style scoped>
-
-</style>
