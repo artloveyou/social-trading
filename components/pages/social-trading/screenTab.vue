@@ -36,13 +36,15 @@
     },
     computed: {
       imageScreen() {
-        if (this.gif === true && this.reload === true) {
-          // reload .gif with once animation every intersection
-          return require(`~/assets/img/${this.screen}`) + "?a=" + Math.random()
-        } else {
-          // don't reload .png
-          return require(`~/assets/img/${this.screen}`)
-        }
+        return require(`~/assets/img/${this.screen}`)
+        // If need reload
+        // if (this.gif === true && this.reload === true) {
+        //   // reload .gif with once animation every intersection
+        //   return require(`~/assets/img/${this.screen}`) + "?a=" + Math.random()
+        // } else {
+        //   // don't reload .png
+        //   return require(`~/assets/img/${this.screen}`)
+        // }
       },
       tabScreen() {
         if (this.tab) {
