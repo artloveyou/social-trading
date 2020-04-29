@@ -4,7 +4,7 @@ export default {
   router: {
     base: '/social-trading/'
   },
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */

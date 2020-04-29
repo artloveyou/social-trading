@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import pages from '~/pages/pages'
+  import pages from '~/layouts/default/pages'
 
   export default {
     components: {

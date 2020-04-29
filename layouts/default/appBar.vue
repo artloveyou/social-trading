@@ -6,7 +6,9 @@
     light
   >
 
-    <logo/>
+    <client-only>
+      <logo/>
+    </client-only>
 
     <v-spacer/>
 
@@ -29,6 +31,7 @@
 
 <script>
   import logo from '~/components/logo/logo'
+  import ClientOnly from 'vue-client-only'
   import languageSelector from '~/components/layouts/languageSelector'
   import appTabs from '~/layouts/default/appTabs'
   import signUp from '~/layouts/default/signUp'
@@ -36,7 +39,7 @@
 
   export default {
     components: {
-      logo,
+      logo, ClientOnly,
       languageSelector,
       appTabs, signUp, signIn
     },
@@ -52,6 +55,7 @@
       display: none;
     }
   }
+
   @media (min-width: 1270px) {
     .mobile-tabs-icon {
       display: none;

@@ -10,18 +10,18 @@
         </span>
     </h1>
 
-    <screenTab :screen="'tab10screen.png'"/>
+    <screenTab2 :screen="'tab10screen.png'"/>
 
   </div>
 
 </template>
 
 <script>
-  import screenTab from '~/components/pages/social-trading/screenTab.vue'
+  import screenTab2 from '~/components/social-trading/screenTab2.vue'
 
   export default {
     components: {
-      screenTab
+      screenTab2
     }
   }
 </script>

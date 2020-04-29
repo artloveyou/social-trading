@@ -16,8 +16,8 @@
 </template>
 
 <script>
-  import screenTab from '~/components/pages/social-trading/screenTab.vue'
-  import indicators from '~/components/pages/social-trading/indicators.vue'
+  import screenTab from '~/components/social-trading/screenTab.vue'
+  import indicators from '~/components/social-trading/indicators.vue'
 
   export default {
     components: {

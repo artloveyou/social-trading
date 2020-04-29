@@ -43,7 +43,7 @@
 </template>
 
 <script>
-  import secondBannerCard from '~/components/pages/social-trading/secondBannerCard.vue'
+  import secondBannerCard from '~/components/social-trading/secondBannerCard.vue'
   import iconScroll from '~/assets/icons/iconScroll'
 
   export default {

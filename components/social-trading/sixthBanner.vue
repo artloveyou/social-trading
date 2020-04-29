@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  import screenTab from '~/components/pages/social-trading/screenTab.vue'
+  import screenTab from '~/components/social-trading/screenTab.vue'
   export default {
     components: {
       screenTab

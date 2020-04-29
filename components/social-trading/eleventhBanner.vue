@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import bannerAnimation from '~/components/pages/social-trading/bannerAnimation.vue'
+  import bannerAnimation from '~/components/social-trading/bannerAnimation.vue'
 
   export default {
     components: {

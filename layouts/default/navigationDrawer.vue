@@ -32,7 +32,7 @@
   import navigationDrawerTop from '~/layouts/default/navigationDrawerTop'
   import signUpMobile from '~/layouts/default/signUpMobile'
   import signInMobile from '~/layouts/default/signInMobile'
-  import pages from '~/pages/pages'
+  import pages from '~/layouts/default/pages'
 
   export default {
     components: {
