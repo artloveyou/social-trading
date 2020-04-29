@@ -48,11 +48,6 @@
           this.showContentBlock = 'show-content'
           this.animateContent = 'animate-content'
           this.animateSignature = 'animate-signature'
-        } else {
-          this.animate = 'none'
-          this.showContentBlock = 'none'
-          this.animateContent = 'none'
-          this.animateSignature = 'none'
         }
       }
     },
@@ -79,7 +74,7 @@
     background-color: #ffffff;
     width: 100%;
     height: 100%;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
   }
 
   .animate {

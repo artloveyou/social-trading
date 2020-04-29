@@ -63,10 +63,6 @@
           this.reload = true;
           this.showBanner = 'show-banner'
           this.animate = 'animate'
-        } else {
-          this.animate = 'none'
-          this.showBanner = 'none'
-          this.reload = false;
         }
       }
     }

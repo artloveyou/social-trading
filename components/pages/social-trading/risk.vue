@@ -94,13 +94,6 @@
           this.scaleAnimateTimeout = setTimeout(() => {
             this.scaleAnimate = 'scale-end'
           }, 2000)
-        } else {
-          this.animate = 'none'
-          this.showBanner = 'none'
-          this.maximumAnimate = 'none'
-          this.depositAnimate = 'none'
-          this.clockAnimate = 'none'
-          this.scaleAnimate = 'none'
         }
       }
     }

@@ -47,36 +47,32 @@
 
   export default {
     components: {
-      firstBanner,
-      secondBanner,
-      thirdBanner,
-      fourthBanner,
-      indicators,
-      fifthBanner,
-      sixthBanner,
-      risk,
-      seventhBanner,
-      eighthBanner,
-      ninthBanner,
-      tenthBanner,
-      eleventhBanner,
-      twelfthBanner
+      firstBanner, secondBanner, thirdBanner, fourthBanner, indicators, fifthBanner, sixthBanner, risk,
+      seventhBanner, eighthBanner, ninthBanner, tenthBanner, eleventhBanner, twelfthBanner
     },
   }
 </script>
 
 <style>
-  .container{
+  .scroll {
+    position: fixed;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  .container {
     padding: 0 !important;
   }
-  .banners-container{
+
+  .banners-container {
     overflow: hidden;
   }
-  .spacer-mobile{
+
+  .spacer-mobile {
     height: 100px;
   }
+
   @media (max-width: 600px) {
-    .spacer-mobile{
+    .spacer-mobile {
       height: 30px;
     }
   }

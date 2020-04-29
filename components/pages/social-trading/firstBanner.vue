@@ -61,9 +61,6 @@
         if (this.isIntersecting === true) {
           this.animate = 'animate'
           this.showBanner = 'show-banner'
-        } else {
-          this.animate = 'none'
-          this.showBanner = 'none'
         }
       }
     }

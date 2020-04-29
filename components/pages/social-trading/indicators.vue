@@ -114,10 +114,6 @@
           this.timeout = setTimeout(() => {
             this.valueIncrement()
           }, 1000)
-        } else {
-          this.animate = 'none'
-          this.showBanner = 'none'
-          this.valueClear()
         }
       },
 
