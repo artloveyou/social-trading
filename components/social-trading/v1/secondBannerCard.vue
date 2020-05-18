@@ -7,7 +7,7 @@
           size="150"
         >
           <img
-            src='~/assets/img/avatar.png'
+            src='~/assets/img/social-trading/v1/avatar.png'
             alt="ColbyMartin"
           >
         </v-avatar>

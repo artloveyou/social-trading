@@ -2,9 +2,9 @@
 
   <div class="banner-with-tab">
 
-      <h1 class="banner-title-small banner-center pa-7">Единственный способ увеличить инвестиции –
-        бесстрастно анализировать.
-        <span class="grey-text">
+    <h1 class="banner-title-small banner-center pa-7">Единственный способ увеличить инвестиции –
+      бесстрастно анализировать.
+      <span class="grey-text">
           График доходности собирает совокупность результатов по каждой сделке трейдера и помогает отобрать наиболее
           перспективных.
           Динамика доходности в виде графика позволяет наглядно увидеть, как торгует каждый трейдер в платформе.
@@ -12,16 +12,17 @@
           В настройках графика вы можете установить дневную, недельную или месячную доходность для оценки перспектив
           в зависимости от планируемых сроков инвестиций.
         </span>
-      </h1>
+    </h1>
 
-      <screenTab2 :screen="'tab12screen.png'"/>
+    <screenTab2 :screen="'tab12screen.png'"/>
 
   </div>
 
 </template>
 
 <script>
-  import screenTab2 from '~/components/social-trading/screenTab2.vue'
+  import screenTab2 from '~/components/social-trading/v1/screenTab2.vue'
+
   export default {
     components: {
       screenTab2

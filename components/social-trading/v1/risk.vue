@@ -7,7 +7,7 @@
              :class="showBanner">
           <div
             :class="animate">
-            <img class="img risk" src="~/assets/img/3.png"/>
+            <img class="img risk" src="~/assets/img/social-trading/v1/3.png"/>
             <h4>УРОВЕНЬ РИСКА</h4>
           </div>
         </div>
@@ -20,7 +20,7 @@
           class="mini-card maximum-start"
           :class="maximumAnimate"
         >
-          <img src="~/assets/img/iconMaximum.svg"/>
+          <img src="~/assets/img/social-trading/v1/iconMaximum.svg"/>
           <div class="mini-card-description">Максимальная относительная просадка</div>
         </div>
       </v-col>
@@ -30,7 +30,7 @@
           class="mini-card deposit-start"
           :class="depositAnimate"
         >
-          <img src="~/assets/img/iconDeposit.svg"/>
+          <img src="~/assets/img/social-trading/v1/iconDeposit.svg"/>
           <div class="mini-card-description">Максимальная загрузка депозита</div>
         </div>
       </v-col>
@@ -40,7 +40,7 @@
           class="mini-card clock-start"
           :class="clockAnimate"
         >
-          <img src="~/assets/img/iconClock.svg"/>
+          <img src="~/assets/img/social-trading/v1/iconClock.svg"/>
           <div class="mini-card-description">Срок жизни торгового счёта</div>
         </div>
       </v-col>
@@ -50,7 +50,7 @@
           class="mini-card scale-start"
           :class="scaleAnimate"
         >
-          <img src="~/assets/img/iconScale.svg"/>
+          <img src="~/assets/img/social-trading/v1/iconScale.svg"/>
           <div class="mini-card-description">Размер кредитного плеча</div>
         </div>
       </v-col>

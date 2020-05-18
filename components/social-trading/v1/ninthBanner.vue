@@ -1,5 +1,5 @@
 <template>
-  <bannerAnimation :image="'banner11.png'">
+  <bannerAnimation :image="'banner9.png'">
     <template v-slot:content>
       <h1 class="banner-title grey-text">Рискованно?</h1>
       <h1 class="banner-big-title">Возможно.</h1>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import bannerAnimation from '~/components/social-trading/bannerAnimation.vue'
+  import bannerAnimation from '~/components/social-trading/v1/bannerAnimation.vue'
 
   export default {
     components: {

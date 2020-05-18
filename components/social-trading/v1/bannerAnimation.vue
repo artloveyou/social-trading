@@ -53,7 +53,7 @@
     },
     computed: {
       imageLoad() {
-        return require(`~/assets/img/${this.image}`)
+        return require(`~/assets/img/social-trading/v1/${this.image}`)
       },
     },
   }

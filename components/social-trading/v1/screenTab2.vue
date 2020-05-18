@@ -36,28 +36,28 @@
     },
     computed: {
       imageScreen() {
-        return require(`~/assets/img/${this.screen}`)
+        return require(`~/assets/img/social-trading/v1/${this.screen}`)
         // If need reload
         // if (this.gif === true && this.reload === true) {
         //   // reload .gif with once animation every intersection
-        //   return require(`~/assets/img/${this.screen}`) + "?a=" + Math.random()
+        //   return require(`~/assets/img/social-trading/v1/${this.screen}`) + "?a=" + Math.random()
         // } else {
         //   // don't reload .png
-        //   return require(`~/assets/img/${this.screen}`)
+        //   return require(`~/assets/img/social-trading/v1/${this.screen}`)
         // }
       },
       tabScreen() {
         if (this.tab) {
-          return require(`~/assets/img/${this.tab}`)
+          return require(`~/assets/img/social-trading/v1/${this.tab}`)
         } else {
-          return require(`~/assets/img/tab.png`)
+          return require(`~/assets/img/social-trading/v1/tab.png`)
         }
       },
     },
     methods: {
       reloadGif() {
         this.reload = true;
-        // return require(`~/assets/img/${this.screen}`)+"?a="+Math.random()
+        // return require(`~/assets/img/social-trading/v1/${this.screen}`)+"?a="+Math.random()
       },
       onIntersect(entries, observer) {
         this.isIntersecting = entries[0].isIntersecting

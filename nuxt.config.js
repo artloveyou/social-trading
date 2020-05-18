@@ -29,7 +29,9 @@ export default {
   */
   css: [
     '~/css/main.css',
-    '~/css/buttons.css'
+    '~/css/buttons.css',
+    '~/css/banners-v1.css',
+    '~/css/banners-v2.css'
   ],
   /*
   ** Plugins to load before mounting the App

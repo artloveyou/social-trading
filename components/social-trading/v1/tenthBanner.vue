@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import screenTab2 from '~/components/social-trading/screenTab2.vue'
+  import screenTab2 from '~/components/social-trading/v1/screenTab2.vue'
 
   export default {
     components: {
