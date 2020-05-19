@@ -12,9 +12,7 @@
 </script>
 
 <style scoped>
-  .first-banner {
-    border: 1px solid red;
-  }
+
   .first-block {
     font-style: normal;
     font-weight: bold;
@@ -30,5 +28,13 @@
     text-align: center;
     max-width: 1000px;
     margin: 20px 0 200px 0;
+  }
+  @media (max-width: 800px) {
+    .first-block {
+      font-size: 26px;
+    }
+    .second-block {
+      font-size: 42px;
+    }
   }
 </style>

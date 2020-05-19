@@ -19,20 +19,18 @@
     data() {
       return {
         isIntersecting: false,
-        animatedly: false
+        animate: false
       }
     },
     computed: {
       animatedGif() {
-        if (this.animatedly === false) {
-          if (this.isIntersecting === true) {
-            this.animatedly = true;
-            return require(`~/assets/img/social-trading/v2/LapAnimation.gif`);
-          } else {
-            return require(`~/assets/img/social-trading/v2/LapPlaceholderStart.png`);
-          }
+        if (this.isIntersecting === true) {
+          this.animate = true
+        }
+        if (this.animate === true) {
+          return require(`~/assets/img/social-trading/v2/LapAnimation.gif`);
         } else {
-          return require(`~/assets/img/social-trading/v2/LapPlaceholderEnd.png`);
+          return require(`~/assets/img/social-trading/v2/LapPlaceholderStart.png`);
         }
       }
     },
@@ -50,6 +48,5 @@
     bottom: 10px;
     width: 100px;
     height: 20px;
-    background-color: red;
   }
 </style>
